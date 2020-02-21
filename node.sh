@@ -7,7 +7,8 @@ sudo apt-get update
 echo -e "\n\033[93mInstalling cURL\033[0m"
 sudo apt-get install curl
 
-read -p "\n\033[94mInstall LTS or latest version?\033[0m [LTS/latest] : " choice
+echo ""
+read -p "Install LTS or latest version? [LTS/latest] : " choice
 if [ "$choice" == "LTS" -o "$choice" == "lts" ]; then
 	curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 else
